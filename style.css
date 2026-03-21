@@ -822,21 +822,25 @@ section {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 0.4rem !important; /* Minimal side padding */
+    }
+
     .content-sections-wrapper {
         display: block;
         column-count: 2;
-        column-gap: 0.4rem; /* Reduced for "minor gap" as requested */
+        column-gap: 0.2rem; /* Ultra-minor gap as requested */
         width: 100%;
-        padding: 0 0.2rem;
+        padding: 0;
     }
     
     .content-card {
         display: inline-block;
         width: 100%;
-        margin-bottom: 0.5rem; /* Closer vertically too */
+        margin-bottom: 0.3rem; /* Tighter vertical gap */
         break-inside: avoid;
-        padding: 0.75rem 0.5rem; /* Reduced padding for wider content area */
-        border-radius: 24px;
+        padding: 0.6rem 0.3rem; /* Extreme density for maximum link width */
+        border-radius: 20px; /* Still premium but tighter */
     }
     
     .card-header h3 {
@@ -1133,15 +1137,17 @@ section {
         bottom: 5.5rem;
     }
     
+    .search-box {
+        width: 140px; /* Narrower for mobile to fit */
+        padding: 0.35rem 0.75rem;
+        font-size: 0.85rem;
+    }
+
     .social-btn {
         width: 44px;
         height: 44px;
         font-size: 1.2rem;
     }
-    
-    /* .hero-grid, .main-grid, .secondary-grid {
-        grid-template-columns: 1fr !important;
-    } */
     
     .desktop-nav {
         display: none;
