@@ -416,16 +416,16 @@ section {
 
 .link-item .last-date {
     display: inline-block;
-    font-size: 0.75rem; /* Smaller font as requested */
+    font-size: 0.6rem; /* Ultra-small as requested */
     color: #d97706;
     background: #fff7ed;
-    padding: 2px 10px; /* More compact */
-    border-radius: 4px; /* More rectangular/refined */
-    font-weight: 600;
+    padding: 1px 6px; /* High density */
+    border-radius: 4px;
+    font-weight: 700;
     border: 1px solid #ffedd5;
-    margin-top: 0.3rem;
+    margin-top: 0.15rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 .dark-theme .link-item .last-date {
@@ -823,13 +823,13 @@ section {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 0.4rem !important; /* Minimal side padding */
+        padding: 0 0.25rem !important; /* Almost zero side padding for ultra-wide look */
     }
 
     .content-sections-wrapper {
         display: block;
         column-count: 2;
-        column-gap: 0.2rem; /* Ultra-minor gap as requested */
+        column-gap: 0.25rem;
         width: 100%;
         padding: 0;
     }
@@ -1137,10 +1137,19 @@ section {
         bottom: 5.5rem;
     }
     
+    .nav-actions {
+        flex: 1;
+        justify-content: flex-end;
+        gap: 0.5rem;
+    }
+
     .search-box {
-        width: 140px; /* Narrower for mobile to fit */
-        padding: 0.35rem 0.75rem;
+        flex: 1;
+        max-width: none;
+        width: auto;
+        padding: 0.4rem 0.8rem;
         font-size: 0.85rem;
+        margin: 0 0.5rem;
     }
 
     .social-btn {
