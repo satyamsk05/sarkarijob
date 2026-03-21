@@ -841,12 +841,59 @@ section {
     .content-card {
         display: inline-block;
         width: 100%;
-        margin-bottom: 0.2rem; /* Even tighter vertical gap */
+        margin-bottom: 2rem; /* Significant breathing room as requested */
         break-inside: avoid;
-        padding: 0.4rem 0.2rem; /* Extreme density */
-        border-radius: 12px; /* Tighter radius for smaller cards */
+        padding: 0.6rem 0.35rem; 
+        border-radius: 20px;
+        position: relative;
+    }
+
+    /* Decorative separator after every card on mobile */
+    .content-card::after {
+        content: '';
+        position: absolute;
+        bottom: -1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40px;
+        height: 4px;
+        background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        border-radius: 10px;
+        opacity: 0.5;
+    }
+
+    /* Highlight specific categories to create 'Distance' and variety */
+    #result, #syllabus {
+        border: 1px solid rgba(99, 103, 255, 0.3);
+        box-shadow: 0 0 25px rgba(99, 103, 255, 0.1);
+        margin-top: 1rem; /* More space before these 'secondary' categories */
     }
     
+    .section-divider {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .divider-text {
+        font-size: 0.7rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--primary);
+        opacity: 0.6;
+        white-space: nowrap;
+        background: var(--glass-bg);
+        padding: 4px 12px;
+        border-radius: 50px;
+        border: 1px solid var(--glass-border);
+    }
+
     .card-header h3 {
         font-size: 1rem;
         gap: 0.4rem;
