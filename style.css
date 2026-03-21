@@ -61,6 +61,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 88%; /* Globally shrink everything to match "zoom out" request */
 }
 
 body {
@@ -823,15 +824,16 @@ section {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 0.15rem !important; /* Extremely close to the edge */
+        padding: 0 0.1rem !important; /* Minimal 2px padding for maximum width */
         width: 100% !important;
         max-width: none !important;
+        animation: slideUpFade 0.6s ease-out forwards; /* The "Roll Out" effect */
     }
 
     .content-sections-wrapper {
         display: block;
         column-count: 2;
-        column-gap: 0.2rem;
+        column-gap: 0.15rem; /* Ultra-minor 2px gap */
         width: 100%;
         padding: 0;
     }
@@ -1192,5 +1194,16 @@ section {
     
     .nav-content {
         position: relative;
+    }
+}
+
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
