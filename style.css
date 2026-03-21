@@ -315,9 +315,22 @@ section {
 }
 
 .hero-card:hover {
-    transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-    filter: brightness(1.1);
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.hero-card a,
+.hero-card a:hover,
+.hero-card a:visited,
+.hero-card a:active,
+.hero-card a:focus {
+    color: white !important;
+    text-decoration: none !important;
+}
+
+.hero-card a *,
+.hero-card a:hover * {
+    color: inherit !important;
 }
 
 .hero-card .tag {
