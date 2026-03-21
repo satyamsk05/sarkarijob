@@ -824,49 +824,48 @@ section {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 0.05rem !important; /* Minimal 1px padding for absolute edge-to-edge */
+        padding: 0 0.05rem !important; /* Absolute edge-to-edge */
         width: 100% !important;
         max-width: none !important;
-        animation: slideUpFade 0.6s ease-out forwards; /* The "Roll Out" effect */
+        animation: slideUpFade 0.6s ease-out forwards;
     }
 
     .content-sections-wrapper {
-        display: block;
-        column-count: 2;
-        column-gap: 0.1rem; /* Tiny 1px gap */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0.1rem;
         width: 100%;
         padding: 0;
+        align-items: start; /* CRITICAL: Ensure all cards start at the same vertical height */
     }
-    
+
     .content-card {
-        display: inline-block;
         width: 100%;
-        margin-bottom: 2rem; /* Significant breathing room as requested */
-        break-inside: avoid;
-        padding: 0.6rem 0.35rem; 
-        border-radius: 20px;
+        margin-bottom: 0.5rem; /* Base vertical spacing within rows */
+        padding: 0.4rem 0.2rem;
+        border-radius: 12px;
         position: relative;
     }
 
-    /* Decorative separator after every card on mobile */
-    .content-card::after {
-        content: '';
-        position: absolute;
-        bottom: -1rem;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 40px;
-        height: 4px;
-        background: linear-gradient(90deg, transparent, var(--primary), transparent);
-        border-radius: 10px;
-        opacity: 0.5;
+    /* Full-width decorative group separators */
+    .section-divider {
+        grid-column: 1 / -1; /* SPAN BOTH COLUMNS */
+        width: 100%;
+        text-align: center;
+        margin: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        background: linear-gradient(90deg, transparent, rgba(99, 103, 255, 0.05), transparent);
+        padding: 10px 0;
     }
 
-    /* Highlight specific categories to create 'Distance' and variety */
+    /* Highlight specific categories for premium distinction */
     #result, #syllabus {
         border: 1px solid rgba(99, 103, 255, 0.3);
         box-shadow: 0 0 25px rgba(99, 103, 255, 0.1);
-        margin-top: 1rem; /* More space before these 'secondary' categories */
+        /* Removed margin-top to fix alignment gap reported by user */
     }
     
     .section-divider {
