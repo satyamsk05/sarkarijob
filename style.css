@@ -825,18 +825,18 @@ section {
     .content-sections-wrapper {
         display: block;
         column-count: 2;
-        column-gap: 0.75rem; /* Tighter gap for better balance */
+        column-gap: 0.4rem; /* Reduced for "minor gap" as requested */
         width: 100%;
-        padding: 0;
+        padding: 0 0.2rem;
     }
     
     .content-card {
         display: inline-block;
         width: 100%;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem; /* Closer vertically too */
         break-inside: avoid;
-        padding: 1.25rem 0.75rem;
-        border-radius: 28px; /* Balanced rounded corners for mobile */
+        padding: 0.75rem 0.5rem; /* Reduced padding for wider content area */
+        border-radius: 24px;
     }
     
     .card-header h3 {
