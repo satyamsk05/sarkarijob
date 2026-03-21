@@ -61,7 +61,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 88%; /* Globally shrink everything to match "zoom out" request */
+    font-size: 75%; /* Globally shrink everything to 12px base for ultra-dense 67% zoom look */
 }
 
 body {
@@ -824,7 +824,7 @@ section {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 0.1rem !important; /* Minimal 2px padding for maximum width */
+        padding: 0 0.05rem !important; /* Minimal 1px padding for absolute edge-to-edge */
         width: 100% !important;
         max-width: none !important;
         animation: slideUpFade 0.6s ease-out forwards; /* The "Roll Out" effect */
@@ -833,7 +833,7 @@ section {
     .content-sections-wrapper {
         display: block;
         column-count: 2;
-        column-gap: 0.15rem; /* Ultra-minor 2px gap */
+        column-gap: 0.1rem; /* Tiny 1px gap */
         width: 100%;
         padding: 0;
     }
@@ -841,10 +841,10 @@ section {
     .content-card {
         display: inline-block;
         width: 100%;
-        margin-bottom: 0.3rem; /* Tighter vertical gap */
+        margin-bottom: 0.2rem; /* Even tighter vertical gap */
         break-inside: avoid;
-        padding: 0.6rem 0.3rem; /* Extreme density for maximum link width */
-        border-radius: 20px; /* Still premium but tighter */
+        padding: 0.4rem 0.2rem; /* Extreme density */
+        border-radius: 12px; /* Tighter radius for smaller cards */
     }
     
     .card-header h3 {
