@@ -620,31 +620,29 @@ function initFAQ() {
 
 function initTheme() {
     const toggle = document.getElementById('theme-toggle');
-    const body = document.body;
+    if (!toggle) return;
     
-    // Theme is partially handled by inline script, but let's ensure full sync
-    const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
-    body.className = savedTheme;
-    updateToggleIcon(body, toggle);
+    const html = document.documentElement;
+    updateToggleIcon(html, toggle);
 
     toggle.addEventListener('click', () => {
-        if (body.classList.contains('light-theme')) {
-            body.classList.replace('light-theme', 'dark-theme');
+        if (html.classList.contains('light-theme')) {
+            html.classList.replace('light-theme', 'dark-theme');
             localStorage.setItem('sarkari-theme', 'dark-theme');
         } else {
-            body.classList.replace('dark-theme', 'light-theme');
+            html.classList.replace('dark-theme', 'light-theme');
             localStorage.setItem('sarkari-theme', 'light-theme');
         }
-        updateToggleIcon(body, toggle);
+        updateToggleIcon(html, toggle);
     });
 }
 
-function updateToggleIcon(body, toggle) {
+function updateToggleIcon(element, toggle) {
     const icon = toggle.querySelector('i');
-    if (body.classList.contains('light-theme')) {
-        icon.className = 'ph ph-sun';
+    if (element.classList.contains('light-theme')) {
+        icon.className = 'ph-bold ph-sun';
     } else {
-        icon.className = 'ph ph-moon';
+        icon.className = 'ph-bold ph-moon';
     }
 }
 
@@ -711,24 +709,8 @@ function initNavigation() {
 
 function populateUI() {
     // Populate Trending
-    const heroGrid = document.getElementById('hero-grid');
-    if (heroGrid) {
-        heroGrid.innerHTML = '';
-        data.trending.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'hero-card';
-            const id = slugify(item.title);
-            const isInLinks = window.location.pathname.includes('/links/');
-            const url = isInLinks ? `${id}.html` : `links/${id}.html`;
-            card.innerHTML = `
-                <a href="${url}" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                    <h4>${item.title}</h4>
-                    <span class="tag">${item.tag}</span>
-                </a>
-            `;
-            heroGrid.appendChild(card);
-        });
-    }
+    // Hero grid is handled statically in index.html to allow for premium massive designs.
+    // Dynamic population is disabled here to avoid "ched chad" with the manual layout.
 
     // Populate Lists with limit 15 for homepage
     renderList('results-list', data.results, 15, false);

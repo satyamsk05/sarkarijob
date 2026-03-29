@@ -9,108 +9,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="../style.css">
-    <script>
+        <script>
         (function() {
             const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
-            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.documentElement.className = savedTheme;
         })();
     </script>
-    <style>
+        <style>
         .sarkari-content {
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            color: var(--text-dark);
-            line-height: 1.6;
+            color: var(--text-main);
+            line-height: 1.8;
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            border: var(--border-width) solid var(--border-color);
+            box-shadow: var(--shadow-offset) var(--shadow-offset) 0px var(--border-color);
+            margin-bottom: 3rem;
         }
-        .sarkari-content h1, .sarkari-content h2, .sarkari-content h3, .sarkari-content h4, .sarkari-content h5, .sarkari-content h6 {
+        .sarkari-content h1, .sarkari-content h2, .sarkari-content h3, .sarkari-content h4 {
             color: var(--primary);
             margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-        }
-        .sarkari-content h3 { font-size: 1.6rem; }
-        .sarkari-content h4 { font-size: 1.4rem; }
-        .sarkari-content p {
-            margin-bottom: 1rem;
-            font-size: 1.05rem;
-        }
-        .sarkari-content a {
-            color: var(--primary);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-        .sarkari-content a:hover {
-            color: var(--secondary);
-            text-decoration: underline;
-        }
-        .sarkari-content ul {
-            padding-left: 1.5rem;
-            margin-bottom: 1rem;
-            list-style-type: disc;
-        }
-        .sarkari-content li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
         }
         .sarkari-content table {
             width: 100% !important;
             border-collapse: separate;
             border-spacing: 0;
-            background: #ffffff;
-            border: 1px solid var(--border-color);
-            border-radius: 20px;
+            background: var(--card-bg);
+            border: var(--border-width) solid var(--border-color);
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
             margin: 1.5rem 0;
+            box-shadow: 4px 4px 0px var(--border-color);
         }
         .sarkari-content th, .sarkari-content tr td:only-child {
-            background: linear-gradient(135deg, rgba(99, 103, 255, 0.1), rgba(167, 139, 250, 0.1));
-            color: var(--primary);
-            padding: 1rem 1.5rem;
-            font-weight: 700;
+            background: var(--secondary);
+            color: var(--text-main);
+            padding: 1rem;
+            font-weight: 800;
             text-align: center;
-            font-size: 1.1rem;
+            border-bottom: 2px solid var(--border-color);
         }
         .sarkari-content td {
-            padding: 1rem 1.25rem;
-            border-top: 1px solid var(--border-color);
-            border-left: 1px solid var(--border-color);
-            color: var(--text-dark);
-            vertical-align: top;
+            padding: 0.8rem 1rem;
+            border-top: 1px solid rgba(0,0,0,0.1);
+            border-left: 1px solid rgba(0,0,0,0.1);
+            color: var(--text-main);
+            font-weight: 600;
         }
-        .sarkari-content td:first-child {
-            border-left: none;
+        .dark-theme .sarkari-content td {
+            border-color: rgba(255,255,255,0.1);
         }
-        .sarkari-content tr:first-child td {
-            border-top: none;
+        .sarkari-content td:first-child { border-left: none; }
+        .sarkari-content tr:first-child td { border-top: none; }
+        .sarkari-content a {
+            color: var(--primary);
+            font-weight: 700;
+            text-decoration: none;
+            border-bottom: 2px solid var(--primary);
         }
-        .sarkari-content tr {
-            transition: background 0.2s;
-        }
-        .sarkari-content tr:hover {
-            background: rgba(99, 103, 255, 0.02);
-        }
-        .light-theme .sarkari-content {
-            color: #333;
-        }
-        .dark-theme .sarkari-content {
-            color: #eee;
-        }
-        .sarkari-content img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .sarkari-content a:hover {
+            background: var(--primary);
+            color: white;
         }
     </style>
 </head>
 <body class="light-theme">
-    <script>
-        (function() {
-            const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
-            document.body.className = savedTheme;
-        })();
-    </script>
     <header class="brutal-nav">
         <div class="container nav-content">
             <div class="logo">
@@ -141,10 +111,10 @@
                     <input type="text" placeholder="Search...">
                 </div>
                 <button id="theme-toggle" class="icon-btn">
-                    <i class="ph ph-moon"></i>
+                    <i class="ph-bold ph-moon"></i>
                 </button>
                 <button id="mobile-menu-btn" class="icon-btn mobile-only">
-                    <i class="ph ph-list"></i>
+                    <i class="ph-bold ph-list"></i>
                 </button>
             </div>
         </div>
@@ -724,7 +694,7 @@
         </div>
     </main>
 
-    <footer class="brutal-footer">
+        <footer class="brutal-footer">
         <div class="container footer-content">
             <!-- Column 1: Brand Info -->
             <div class="footer-section footer-info">
@@ -732,58 +702,63 @@
                      <i class="ph-bold ph-graduation-cap"></i>
                     <span>Sarkari<span class="highlight">Result</span></span>
                 </div>
-                <p>India's most trusted recruitment portal since 2012. Providing real-time updates for latest Government Jobs, Admit Cards, and results with absolute accuracy.</p>
+                <p>India's leading educational and job portal. Updated in real-time with official government job notifications, admit cards, and results for aspirants across India.</p>
+                <div class="footer-social-row">
+                    <a href="https://t.me/SarkariExam_info" class="social-icon" title="Telegram"><i class="ph-fill ph-telegram-logo"></i></a>
+                    <a href="https://whatsapp.com/channel/0029VaAbQf01NCrYADMLt00L" class="social-icon" title="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                    <a href="#" class="social-icon" title="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+                    <a href="#" class="social-icon" title="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                </div>
             </div>
 
-            <!-- Column 2: Quick Links -->
+            <!-- Column 2: Job Explore -->
             <div class="footer-section">
-                <h4>Quick Links</h4>
+                <h4>Job Categories</h4>
                 <ul class="footer-links-list">
-                    <li><a href="../index.html#home"><i class="ph ph-house"></i> Home</a></li>
-                    <li><a href="about-us.html"><i class="ph ph-info"></i> About Us</a></li>
-                    <li><a href="contact-us.html"><i class="ph ph-envelope"></i> Contact Us</a></li>
-                    <li><a href="faq.html"><i class="ph ph-question"></i> FAQ Help</a></li>
+                    <li><a href="../category.html?type=latestJobs"><i class="ph-bold ph-briefcase"></i> Latest Jobs</a></li>
+                    <li><a href="../category.html?type=result"><i class="ph-bold ph-check-square"></i> Results 2026</a></li>
+                    <li><a href="../category.html?type=admitCard"><i class="ph-bold ph-identification-card"></i> Admit Cards</a></li>
+                    <li><a href="../category.html?type=answerKey"><i class="ph-bold ph-key"></i> Official Keys</a></li>
                 </ul>
             </div>
 
-            <!-- Column 3: Job Categories -->
+            <!-- Column 3: Company -->
             <div class="footer-section">
-                <h4>Categories</h4>
+                <h4>Information</h4>
                 <ul class="footer-links-list">
-                    <li><a href="../category.html?type=latestJobs"><i class="ph ph-briefcase"></i> Latest Jobs</a></li>
-                    <li><a href="../category.html?type=result"><i class="ph ph-check-square"></i> Results</a></li>
-                    <li><a href="../category.html?type=admitCard"><i class="ph ph-identification-card"></i> Admit Card</a></li>
-                    <li><a href="../category.html?type=answerKey"><i class="ph ph-key"></i> Answer Key</a></li>
+                    <li><a href="about-us.html">About Portal</a></li>
+                    <li><a href="contact-us.html">Contact Support</a></li>
+                    <li><a href="faq.html">Help & FAQ</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
                 </ul>
             </div>
 
             <!-- Column 4: Stay Updated -->
             <div class="footer-section">
                 <h4>Stay Updated</h4>
-                <div class="newsletter-box">
-                    <p>Get instant job alerts on your email (Coming Soon).</p>
-                    <div class="subscribe-group">
-                        <input type="email" placeholder="Enter Email...">
-                        <button class="footer-btn">JOIN</button>
-                    </div>
+                <div class="footer-info">
+                    <p>Join over 1M+ aspirants on our social channels for instant job notifications and exam updates.</p>
                 </div>
-                <div class="footer-social-grid">
-                    <a href="#" class="footer-social-item"><i class="ph-fill ph-whatsapp-logo"></i></a>
-                    <a href="#" class="footer-social-item"><i class="ph-fill ph-telegram-logo"></i></a>
-                    <a href="#" class="footer-social-item"><i class="ph-fill ph-youtube-logo"></i></a>
+                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="https://t.me/SarkariExam_info" class="brutal-btn" style="width: 100%; justify-content: center; background: #0088cc; color: white;">
+                        <i class="ph-fill ph-paper-plane-tilt"></i> JOIN TELEGRAM
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VaAbQf01NCrYADMLt00L" class="brutal-btn" style="width: 100%; justify-content: center; background: #25d366; color: white;">
+                        <i class="ph-fill ph-whatsapp-logo"></i> WHATSAPP ALERTS
+                    </a>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container" style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 3rem;">
             <div class="footer-disclaimer-card">
-                <p><strong>Important Disclaimer:</strong> SarkariResult.com (Sarkari Result Premium) is NOT affiliated with any Government Organization or Recruitment Board. All information shared here is gathered from official recruitment notifications and public domains. Users are strictly advised to cross-verify all information with official websites before application. We are not responsible for any inadvertent errors or omissions.</p>
+                <p><strong>Disclaimer:</strong> Sarkari Result Premium is an independent portal. Information is gathered from various official sources. While we strive for accuracy, users are advised to verify details from official government websites before applying.</p>
             </div>
             <div class="footer-bottom-bar">
-                <p>&copy; 2026 Sarkari Result Premium. Crafted with Pride in India.</p>
-                <div class="footer-links-list" style="flex-direction: row; gap: 1.5rem;">
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="disclaimer.html">Terms of Use</a></li>
+                <p>&copy; 2026 Sarkari Result Premium. All Rights Reserved.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="privacy-policy.html" style="text-decoration: none; font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Privacy</a>
+                    <a href="disclaimer.html" style="text-decoration: none; font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Terms</a>
                 </div>
             </div>
         </div>
