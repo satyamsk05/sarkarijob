@@ -238,11 +238,16 @@ section {
     transform: translate(-1px, -1px);
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0; /* Align to the start of "More" */
     background: var(--card-bg);
     min-width: 200px;
     border: var(--border-width) solid var(--border-color);
@@ -257,14 +262,14 @@ section {
     display: block;
 }
 
-/* Hover Bridge */
+/* Hover Bridge: restricted to button width */
 .dropdown::after {
     content: '';
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 15px;
+    height: 20px;
     z-index: 1000;
 }
 
