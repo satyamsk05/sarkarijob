@@ -596,10 +596,23 @@ function initFAQ() {
         const question = item.querySelector('.faq-question');
         question.addEventListener('click', () => {
             const isActive = item.classList.contains('active');
-            // Close all other items
-            faqItems.forEach(i => i.classList.remove('active'));
-            if (!isActive) {
-                item.classList.add('active');
+            
+            // Close all other items for accordion effect
+            faqItems.forEach(i => {
+                if (i !== item) {
+                    i.classList.remove('active');
+                    const answer = i.querySelector('.faq-answer');
+                    if (answer) answer.style.maxHeight = null;
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            if (item.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = null;
             }
         });
     });
@@ -641,14 +654,18 @@ function initMobileMenu() {
     
     if (mobileBtn && desktopNav) {
         mobileBtn.addEventListener('click', () => {
-            desktopNav.classList.toggle('active');
+            const isActive = desktopNav.classList.toggle('active');
+            document.body.classList.toggle('menu-open', isActive);
             
             // Toggle icon
             const icon = mobileBtn.querySelector('i');
-            if (desktopNav.classList.contains('active')) {
+            if (isActive) {
                 icon.className = 'ph ph-x';
+                // Set max-height for animation
+                desktopNav.style.maxHeight = desktopNav.scrollHeight + "px";
             } else {
                 icon.className = 'ph ph-list';
+                desktopNav.style.maxHeight = null;
             }
         });
         
@@ -657,6 +674,8 @@ function initMobileMenu() {
         navLinks.forEach(link => {
             link.addEventListener('click', () => {
                 desktopNav.classList.remove('active');
+                document.body.classList.remove('menu-open');
+                desktopNav.style.maxHeight = null;
                 const icon = mobileBtn.querySelector('i');
                 if(icon) icon.className = 'ph ph-list';
             });
@@ -733,22 +752,56 @@ function slugify(text) {
 }
 
 function initSearch() {
-    const searchInput = document.querySelector('.search-box input');
+    const mainSearchInput = document.getElementById('main-search-input');
+    const navSearchInput = document.querySelector('.search-box input');
+    const noResultsMessage = document.getElementById('no-results-message');
+    const queryTextSpan = document.getElementById('query-text');
     
-    if (searchInput) {
-        searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase();
-            const allItems = document.querySelectorAll('.link-item, .hero-card');
-            
-            allItems.forEach(item => {
-                const text = item.innerText.toLowerCase();
-                if (text.includes(query)) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
+    function performSearch(query) {
+        query = query.toLowerCase().trim();
+        const allTrackedItems = document.querySelectorAll('.link-item, .hero-card');
+        const allSections = document.querySelectorAll('.content-card, .hero-section');
+        let hasResults = false;
+        
+        allTrackedItems.forEach(item => {
+            const text = item.innerText.toLowerCase();
+            if (text.includes(query)) {
+                item.classList.remove('hidden');
+                item.style.opacity = '1';
+                hasResults = true;
+            } else {
+                item.classList.add('hidden');
+                item.style.opacity = '0';
+            }
         });
+
+        // Hide/Show sections based on results
+        allSections.forEach(section => {
+            const visibleItems = section.querySelectorAll('.link-item:not(.hidden), .hero-card:not(.hidden)');
+            if (visibleItems.length === 0 && query !== "") {
+                section.style.display = 'none';
+            } else {
+                section.style.display = '';
+            }
+        });
+
+        // Handle "No results" message
+        if (noResultsMessage) {
+            if (!hasResults && query !== "") {
+                noResultsMessage.style.display = 'block';
+                if (queryTextSpan) queryTextSpan.textContent = query;
+            } else {
+                noResultsMessage.style.display = 'none';
+            }
+        }
+    }
+
+    if (mainSearchInput) {
+        mainSearchInput.addEventListener('input', (e) => performSearch(e.target.value));
+    }
+    
+    if (navSearchInput) {
+        navSearchInput.addEventListener('input', (e) => performSearch(e.target.value));
     }
 }
 
