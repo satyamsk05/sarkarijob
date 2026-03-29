@@ -513,28 +513,33 @@ section {
     width: fit-content;
 }
 
-/* Live Indicator */
 .live-indicator {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.6rem;
     font-size: 0.75rem;
     font-weight: 900;
-    background: var(--accent-pink);
-    color: white;
-    padding: 0.25rem 0.75rem;
+    background: #f1f5f9; /* Light Slate Neutral */
+    color: #0f172a; /* Dark Slate Text */
+    padding: 0.35rem 1rem;
     border-radius: 50px;
     border: 2px solid var(--border-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
     width: fit-content;
+    box-shadow: 2px 2px 0px var(--border-color);
 }
 
 .live-dot {
     width: 10px;
     height: 10px;
-    background: var(--card-bg);
+    background: #ef4444; /* Vibrant Red */
     border-radius: 50%;
-    animation: pulse-dot 1s infinite;
+    animation: pulse-dot 1.5s infinite;
+}
+
+.dark-theme .live-indicator {
+    background: #1e293b; /* Deep Slate */
+    color: #f1f5f9; /* Off-white Text */
 }
 
 @keyframes pulse-dot {
