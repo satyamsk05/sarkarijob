@@ -950,6 +950,34 @@ section {
     margin-bottom: 4rem;
 }
 
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .brutal-footer {
+        margin-top: 5rem;
+        padding: 3rem 0;
+    }
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    .footer-links-list {
+        align-items: center;
+    }
+    .footer-social-row {
+        justify-content: center;
+    }
+    .footer-info .logo {
+        justify-content: center;
+    }
+}
+
 .footer-section h4 {
     font-size: 1.1rem;
     font-weight: 800;
@@ -997,10 +1025,7 @@ section {
     transform: translateX(4px);
 }
 
-.footer-links-list li a i {
-    font-size: 1rem;
-    color: var(--primary);
-}
+
 
 /* Social icons - Clean Squircle style */
 .footer-social-row {
