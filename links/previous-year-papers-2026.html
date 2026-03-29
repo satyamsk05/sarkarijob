@@ -23,28 +23,44 @@
             document.body.className = savedTheme;
         })();
     </script>
-    <div class="blob-container">
-        <div class="blob blob-1"></div>
+    
         <div class="blob blob-2"></div>
     </div>
 
-    <header class="glass-nav">
+    <header class="brutal-nav">
         <div class="container nav-content">
             <div class="logo">
-                <a href="../index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:0.5rem;">
-                    <i class="ph-bold ph-graduation-cap"></i>
-                    <span>Sarkari<span class="highlight">Result</span></span>
-                </a>
+                <i class="ph-bold ph-graduation-cap"></i>
+                <span>Sarkari<span class="highlight">Result</span></span>
             </div>
             <nav class="desktop-nav">
-                <a href="../index.html">Home</a>
+                <a href="../index.html#home" class="active">Home</a>
                 <a href="../index.html#latest-jobs">Latest Jobs</a>
                 <a href="../index.html#admit-card">Admit Card</a>
                 <a href="../index.html#result">Result</a>
+                <div class="dropdown">
+                    <a href="#" class="more-link">More <i class="ph ph-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="../index.html#result">Results</a>
+                        <a href="../index.html#admit-card">Admit Card</a>
+                        <a href="../index.html#latest-jobs">Latest Jobs</a>
+                        <a href="../index.html#answer-key" class="separator">Answer Key</a>
+                        <a href="../index.html#syllabus">Syllabus</a>
+                        <a href="../index.html#admission">Admission</a>
+                        <a href="../index.html#documents">Verification</a>
+                    </div>
+                </div>
             </nav>
             <div class="nav-actions">
+                <div class="search-box">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" placeholder="Search...">
+                </div>
                 <button id="theme-toggle" class="icon-btn">
                     <i class="ph ph-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="icon-btn mobile-only">
+                    <i class="ph ph-list"></i>
                 </button>
             </div>
         </div>
@@ -81,7 +97,7 @@
                 <div class="tables-container">
                     <section class="table-card glass">
                         <h3><i class="ph ph-calendar-check"></i> Important Dates</h3>
-                        <table>
+                        <table class="brutal-table">
                             <tr><td>Application Start</td><td class="val">March 2026</td></tr>
                             <tr><td>Apply Online Last Date</td><td class="val highlight">Check Notification</td></tr>
                             <tr><td>Exam Date</td><td class="val">To be notified</td></tr>
@@ -90,7 +106,7 @@
                     </section>
                     <section class="table-card glass">
                         <h3><i class="ph ph-currency-inr"></i> Application Fee</h3>
-                        <table>
+                        <table class="brutal-table">
                             <tr><td>General / OBC / EWS</td><td class="val highlight">Check Notification</td></tr>
                             <tr><td>SC / ST / PH / Female</td><td class="val">Check Notification</td></tr>
                             <tr><td colspan="2" class="note">Payment Mode: Net Banking, Credit/Debit Cards, or UPI.</td></tr>
@@ -100,7 +116,7 @@
 
                 <section class="table-card glass full-width">
                      <h3><i class="ph ph-graduation-cap"></i> Eligibility & Vacancy Details</h3>
-                     <table>
+                     <table class="brutal-table">
                          <thead>
                              <tr>
                                  <th>Posts Name</th>
@@ -139,7 +155,7 @@
 
                 <section class="table-card glass full-width">
                      <h3><i class="ph ph-link-simple"></i> Direct Official Links</h3>
-                     <table>
+                     <table class="brutal-table">
                          <tr>
                              <td>Apply Online / Registration</td>
                              <td class="btn-cell"><a href="#" target="_blank" class="btn btn-sm btn-primary">Click Here</a></td>
@@ -161,14 +177,14 @@
             </div>
 
             <aside class="detail-sidebar">
-                <section class="whatsapp-card glass">
+                <section class="whatsapp-card brutal-card">
                     <i class="ph-bold ph-whatsapp-logo"></i>
                     <h4>Job Alerts 2026</h4>
                     <p>Get instant updates for <strong>Previous Year Papers 2026</strong> and other jobs.</p>
                     <a href="#" class="btn btn-whatsapp">Join Channel</a>
                 </section>
                 
-                <section class="info-card glass" style="margin-top: 2rem;">
+                <section class="info-card brutal-card" style="margin-top: 2rem;">
                     <h4>General Instructions</h4>
                     <ul class="sidebar-list">
                         <li>Check Eligibility First</li>
@@ -181,26 +197,67 @@
         </div>
     </main>
 
-        <footer class="glass-footer">
+        <footer class="brutal-footer">
         <div class="container footer-content">
-            <div class="footer-info">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-section footer-info">
                 <div class="logo">
-                    <i class="ph-bold ph-graduation-cap"></i>
+                     <i class="ph-bold ph-graduation-cap"></i>
                     <span>Sarkari<span class="highlight">Result</span></span>
                 </div>
-                <p>The most trusted destination for government job updates.</p>
+                <p>India's most trusted recruitment portal since 2012. Providing real-time updates for latest Government Jobs, Admit Cards, and results with absolute accuracy.</p>
             </div>
-            <div class="footer-links">
-                <a href="about-us.html">About Us</a>
-                <a href="contact-us.html">Contact Us</a>
-                <a href="privacy-policy.html">Privacy Policy</a>
-                <a href="disclaimer.html">Disclaimer</a>
-                <a href="faq.html">FAQ</a>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../index.html#home"><i class="ph ph-house"></i> Home</a></li>
+                    <li><a href="about-us.html"><i class="ph ph-info"></i> About Us</a></li>
+                    <li><a href="contact-us.html"><i class="ph ph-envelope"></i> Contact Us</a></li>
+                    <li><a href="faq.html"><i class="ph ph-question"></i> FAQ Help</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Job Categories -->
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul class="footer-links-list">
+                    <li><a href="../category.html?type=latestJobs"><i class="ph ph-briefcase"></i> Latest Jobs</a></li>
+                    <li><a href="../category.html?type=result"><i class="ph ph-check-square"></i> Results</a></li>
+                    <li><a href="../category.html?type=admitCard"><i class="ph ph-identification-card"></i> Admit Card</a></li>
+                    <li><a href="../category.html?type=answerKey"><i class="ph ph-key"></i> Answer Key</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Stay Updated -->
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <div class="newsletter-box">
+                    <p>Get instant job alerts on your email (Coming Soon).</p>
+                    <div class="subscribe-group">
+                        <input type="email" placeholder="Enter Email...">
+                        <button class="footer-btn">JOIN</button>
+                    </div>
+                </div>
+                <div class="footer-social-grid">
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-telegram-logo"></i></a>
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-youtube-logo"></i></a>
+                </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Sarkari Result Premium. All rights reserved.</p>
+            <div class="footer-disclaimer-card">
+                <p><strong>Important Disclaimer:</strong> SarkariResult.com (Sarkari Result Premium) is NOT affiliated with any Government Organization or Recruitment Board. All information shared here is gathered from official recruitment notifications and public domains. Users are strictly advised to cross-verify all information with official websites before application. We are not responsible for any inadvertent errors or omissions.</p>
+            </div>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Sarkari Result Premium. Crafted with Pride in India.</p>
+                <div class="footer-links-list" style="flex-direction: row; gap: 1.5rem;">
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Terms of Use</a></li>
+                </div>
             </div>
         </div>
     </footer>

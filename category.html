@@ -27,24 +27,34 @@
         })();
     </script>
 
-    <header class="glass-nav">
+    <header class="brutal-nav">
         <div class="container nav-content">
             <div class="logo">
-                <a href="index.html" style="text-decoration:none; color:inherit; display:flex; align-items:center;">
-                    <i class="ph-bold ph-graduation-cap" style="margin-right:0.5rem;"></i>
-                    <span>Sarkari<span class="highlight">Result</span></span>
-                </a>
+                <i class="ph-bold ph-graduation-cap"></i>
+                <span>Sarkari<span class="highlight">Result</span></span>
             </div>
             <nav class="desktop-nav">
-                <a href="index.html#home">Home</a>
+                <a href="index.html#home" class="active">Home</a>
                 <a href="index.html#latest-jobs">Latest Jobs</a>
                 <a href="index.html#admit-card">Admit Card</a>
                 <a href="index.html#result">Result</a>
+                <div class="dropdown">
+                    <a href="#" class="more-link">More <i class="ph ph-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="index.html#result">Results</a>
+                        <a href="index.html#admit-card">Admit Card</a>
+                        <a href="index.html#latest-jobs">Latest Jobs</a>
+                        <a href="index.html#answer-key" class="separator">Answer Key</a>
+                        <a href="index.html#syllabus">Syllabus</a>
+                        <a href="index.html#admission">Admission</a>
+                        <a href="index.html#documents">Verification</a>
+                    </div>
+                </div>
             </nav>
             <div class="nav-actions">
                 <div class="search-box">
                     <i class="ph ph-magnifying-glass"></i>
-                    <input type="text" placeholder="Search jobs, results...">
+                    <input type="text" placeholder="Search...">
                 </div>
                 <button id="theme-toggle" class="icon-btn">
                     <i class="ph ph-moon"></i>
@@ -56,18 +66,18 @@
         </div>
     </header>
 
-    <main class="container page-content" style="margin-top: 100px; padding: 0 0.25rem;">
+    <main class="container page-content" style="margin-top: 40px; padding: 2rem 1rem;">
         <div class="detail-grid" style="grid-template-columns: 1fr;">
             <div class="detail-main">
-                <section class="info-card glass" style="margin-bottom: 1.5rem; background: linear-gradient(135deg, rgba(99, 103, 255, 0.1), rgba(167, 139, 250, 0.1)); border: 1px solid rgba(99, 103, 255, 0.2); padding: 1.5rem; border-radius: 25px;">
-                    <h1 id="category-page-title" style="color: var(--primary); font-size: 1.8rem; font-weight: 800; margin-bottom: 0.5rem;"><i class="ph-bold ph-list-dashes"></i> Category</h1>
-                    <div class="post-meta" style="opacity: 0.8; display: flex; gap: 1rem; font-weight: 600; font-size: 0.85rem;">
-                        <span><i class="ph-bold ph-calendar-check"></i> Updated</span>
-                        <span><i class="ph-bold ph-lightning"></i> Real-time</span>
+                <section class="info-card brutal-card" style="margin-bottom: 2rem; padding: 2.5rem; background: var(--secondary);">
+                    <h1 id="category-page-title" style="color: var(--text-main); font-size: 2.5rem; font-weight: 900; text-transform: uppercase;"><i class="ph-bold ph-list-dashes"></i> Category</h1>
+                    <div class="post-meta" style="opacity: 0.9; display: flex; gap: 1.5rem; font-weight: 800; font-size: 0.9rem; margin-top: 1rem; color: var(--text-main);">
+                        <span style="background: white; padding: 0.2rem 0.6rem; border: 2px solid var(--border-color); border-radius: 6px;"><i class="ph-bold ph-calendar-check"></i> UPDATED</span>
+                        <span style="background: white; padding: 0.2rem 0.6rem; border: 2px solid var(--border-color); border-radius: 6px;"><i class="ph-bold ph-lightning"></i> REAL-TIME</span>
                     </div>
                 </section>
 
-                <div class="content-card glass" style="padding: 1.5rem 0.5rem; border-radius: 25px; margin: 0; box-shadow: var(--glass-shadow);">
+                <div class="content-card" style="padding: 2rem; border-radius: 20px;">
                     <ul class="link-list" id="category-list">
                         <!-- Unlimited Links injected here -->
                     </ul>
@@ -76,29 +86,67 @@
         </div>
     </main>
 
-    <footer class="glass-footer">
+    <footer class="brutal-footer">
         <div class="container footer-content">
-            <div class="footer-info">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-section footer-info">
                 <div class="logo">
-                    <i class="ph-bold ph-graduation-cap"></i>
+                     <i class="ph-bold ph-graduation-cap"></i>
                     <span>Sarkari<span class="highlight">Result</span></span>
                 </div>
-                <p>India's most trusted portal for government job notifications, admit cards, and results with a premium, focused experience.</p>
+                <p>India's most trusted recruitment portal since 2012. Providing real-time updates for latest Government Jobs, Admit Cards, and results with absolute accuracy.</p>
             </div>
-            <div class="footer-links">
-                <a href="links/about-us.html">About Us</a>
-                <a href="links/contact-us.html">Contact Us</a>
-                <a href="links/privacy-policy.html">Privacy Policy</a>
-                <a href="links/disclaimer.html">Disclaimer</a>
-                <a href="links/faq.html">FAQ</a>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html#home"><i class="ph ph-house"></i> Home</a></li>
+                    <li><a href="links/about-us.html"><i class="ph ph-info"></i> About Us</a></li>
+                    <li><a href="links/contact-us.html"><i class="ph ph-envelope"></i> Contact Us</a></li>
+                    <li><a href="links/faq.html"><i class="ph ph-question"></i> FAQ Help</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Job Categories -->
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul class="footer-links-list">
+                    <li><a href="category.html?type=latestJobs"><i class="ph ph-briefcase"></i> Latest Jobs</a></li>
+                    <li><a href="category.html?type=result"><i class="ph ph-check-square"></i> Results</a></li>
+                    <li><a href="category.html?type=admitCard"><i class="ph ph-identification-card"></i> Admit Card</a></li>
+                    <li><a href="category.html?type=answerKey"><i class="ph ph-key"></i> Answer Key</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Stay Updated -->
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <div class="newsletter-box">
+                    <p>Get instant job alerts on your email (Coming Soon).</p>
+                    <div class="subscribe-group">
+                        <input type="email" placeholder="Enter Email...">
+                        <button class="footer-btn">JOIN</button>
+                    </div>
+                </div>
+                <div class="footer-social-grid">
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-telegram-logo"></i></a>
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-youtube-logo"></i></a>
+                </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="footer-disclaimer">
-                <strong>Disclaimer:</strong> This website is not associated with any government department or recruitment board. We only provide research-based information sourced from official notifications. Users are advised to verify all details on official portals before taking any action.
+            <div class="footer-disclaimer-card">
+                <p><strong>Important Disclaimer:</strong> SarkariResult.com (Sarkari Result Premium) is NOT affiliated with any Government Organization or Recruitment Board. All information shared here is gathered from official recruitment notifications and public domains. Users are strictly advised to cross-verify all information with official websites before application. We are not responsible for any inadvertent errors or omissions.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Sarkari Result Premium. All rights reserved.</p>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Sarkari Result Premium. Crafted with Pride in India.</p>
+                <div class="footer-links-list" style="flex-direction: row; gap: 1.5rem;">
+                    <li><a href="links/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="links/disclaimer.html">Terms of Use</a></li>
+                </div>
             </div>
         </div>
     </footer>

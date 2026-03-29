@@ -699,8 +699,10 @@ function populateUI() {
             const card = document.createElement('div');
             card.className = 'hero-card';
             const id = slugify(item.title);
+            const isInLinks = window.location.pathname.includes('/links/');
+            const url = isInLinks ? `${id}.html` : `links/${id}.html`;
             card.innerHTML = `
-                <a href="links/${id}.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
+                <a href="${url}" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
                     <h4>${item.title}</h4>
                     <span class="tag">${item.tag}</span>
                 </a>
@@ -763,7 +765,9 @@ function renderList(elementId, items, limit = null, showDate = false) {
         li.className = `link-item ${item.isNew ? 'new' : ''}`;
         
         const id = slugify(item.title);
-        const url = `links/${id}.html`;
+        // Determine if we are in the links directory
+        const isInLinks = window.location.pathname.includes('/links/');
+        const url = isInLinks ? `${id}.html` : `links/${id}.html`;
         
         let lastDateHtml = '';
         if (showDate) {

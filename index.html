@@ -12,12 +12,6 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
-    <script>
-        (function() {
-            const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        })();
-    </script>
 </head>
 <body class="light-theme">
     <script>
@@ -26,13 +20,8 @@
             document.body.className = savedTheme;
         })();
     </script>
-    <div class="blob-container">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-    </div>
 
-    <header class="glass-nav">
+    <header class="brutal-nav">
         <div class="container nav-content">
             <div class="logo">
                 <i class="ph-bold ph-graduation-cap"></i>
@@ -45,7 +34,7 @@
                 <a href="#result">Result</a>
                 <div class="dropdown">
                     <a href="#" class="more-link">More <i class="ph ph-caret-down"></i></a>
-                    <div class="dropdown-content glass">
+                    <div class="dropdown-content">
                         <a href="#result">Results</a>
                         <a href="#admit-card">Admit Card</a>
                         <a href="#latest-jobs">Latest Jobs</a>
@@ -77,140 +66,72 @@
         <!-- Hero Section: Trending -->
         <section class="hero-section">
             <div class="main-landing-title">
-                <h1 class="landing-heading">Sarkari Updates <span class="highlight-italic">Sabse Tez.</span></h1>
-                <p class="landing-subtext">India ka ultimate job update engine. Latest Government Jobs, Results, aur Admit Cards ki notifications paayein bina kisi delay ke.</p>
+                <div class="live-indicator">
+                    <div class="live-dot"></div> NEW: 2026 JOB UPDATES LIVE
+                </div>
+                <h1 class="landing-heading">Sarkari Updates <span class="highlight">Sabse Tez.</span></h1>
+                <p class="landing-subtext">India's most trusted recruitment portal. Get instant notifications for latest Government Jobs, Results, and Admission forms.</p>
+                <div class="nav-actions" style="margin-top: 2rem; justify-content: flex-start;">
+                    <a href="#latest-jobs" class="brutal-btn" style="background: var(--primary);">EXPLORE JOBS <i class="ph ph-arrow-right"></i></a>
+                    <a href="#result" class="brutal-btn" style="background: var(--secondary);">CHECK RESULTS</a>
+                </div>
             </div>
             
             <div class="hero-grid">
-                <div class="hero-card featured">
-                    <a href="links/indian-army-agniveer-cee-form-2026.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-sword card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <div class="live-indicator">
-                                    <div class="live-dot"></div> LIVE NOW
-                                </div>
-                                <h3 class="massive-title">Indian</h3>
-                                <h4 class="sub-title">Army Agniveer CEE Form 2026</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-clock"></i> <span>Ending Soon • Online Form</span>
-                            </div>
+                <a href="links/indian-army-agniveer-cee-form-2026.html" class="hero-card featured">
+                    <i class="ph-duotone ph-sword card-icon"></i>
+                    <div class="card-content">
+                        <span class="tag">NEW UPDATE</span>
+                        <h3 class="massive-title">Indian Army</h3>
+                        <h4 class="sub-title">Agniveer CEE Form 2026</h4>
+                        <div class="card-meta">
+                            <i class="ph-bold ph-clock"></i> <span>ENDING SOON</span>
                         </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/bihar-iti-cat-admission-form-2026.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-student card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Admission</span>
-                                <h3 class="massive-title">Bihar</h3>
-                                <h4 class="sub-title">ITI CAT Admission Form 2026</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-calendar"></i> <span>Open Now</span>
-                            </div>
+                    </div>
+                </a>
+                
+                <a href="links/bihar-iti-cat-admission-form-2026.html" class="hero-card">
+                    <i class="ph-duotone ph-student card-icon"></i>
+                    <div class="card-content">
+                        <span class="tag">ADMISSION</span>
+                        <h3 class="massive-title">Bihar ITI</h3>
+                        <h4 class="sub-title">Admission Form 2026</h4>
+                        <div class="card-meta">
+                            <i class="ph-bold ph-calendar"></i> <span>OPEN NOW</span>
                         </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/rrb-alp-form-2026-11127-posts.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-train card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Railway</span>
-                                <h3 class="massive-title">RRB</h3>
-                                <h4 class="sub-title">ALP Form 2026 (11,127 Posts)</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-users"></i> <span>High Demand</span>
-                            </div>
+                    </div>
+                </a>
+
+                <a href="links/railway-rrb-alp-online-form-2026-11127-posts.html" class="hero-card">
+                    <i class="ph-duotone ph-train card-icon"></i>
+                    <div class="card-content">
+                        <span class="tag">RAILWAY</span>
+                        <h3 class="massive-title">RRB ALP</h3>
+                        <h4 class="sub-title">11,127 POSTS 2026</h4>
+                        <div class="card-meta">
+                            <i class="ph-bold ph-users"></i> <span>TRENDING</span>
                         </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/uptet-online-form-2026.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-chalkboard-teacher card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Teaching</span>
-                                <h3 class="massive-title">UPTET</h3>
-                                <h4 class="sub-title">Online Form 2026</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-bell-ringing"></i> <span>New Update</span>
-                            </div>
+                    </div>
+                </a>
+
+                <a href="links/uptet-online-form-2026.html" class="hero-card">
+                    <i class="ph-duotone ph-chalkboard-teacher card-icon"></i>
+                    <div class="card-content">
+                        <span class="tag">TEACHING</span>
+                        <h3 class="massive-title">UPTET</h3>
+                        <h4 class="sub-title">ONLINE FORM 2026</h4>
+                        <div class="card-meta">
+                            <i class="ph-bold ph-bell-ringing"></i> <span>NEW</span>
                         </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/kvs-class-1-online-form-2026.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-book-open card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Admission</span>
-                                <h3 class="massive-title">KVS</h3>
-                                <h4 class="sub-title">Class 1 Online Form 2026</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-info"></i> <span>Apply Soon</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/railway-rrb-alp-online-form-2026.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-briefcase card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Jobs</span>
-                                <h3 class="massive-title">Railway</h3>
-                                <h4 class="sub-title">RRB ALP Online Form 2026</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-fire"></i> <span>Trending</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/rrc-scr-apprentice-online-form-2026.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-certificate card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Apprentice</span>
-                                <h3 class="massive-title">RRC</h3>
-                                <h4 class="sub-title">SCR Apprentice Online Form 2026</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-map-pin"></i> <span>Central Region</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="hero-card">
-                    <a href="links/bpsc-teacher-tre-4-0-form.html" style="text-decoration:none; color:inherit; display:block; width:100%; height:100%;">
-                        <i class="ph-duotone ph-scroll card-icon"></i>
-                        <div class="card-content">
-                            <div>
-                                <span class="tag">Latest</span>
-                                <h3 class="massive-title">BPSC</h3>
-                                <h4 class="sub-title">Teacher TRE 4.0 Form</h4>
-                            </div>
-                            <div class="card-meta">
-                                <i class="ph-bold ph-lightning"></i> <span>Fast Track</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
             </div>
         </section>
 
         <!-- All Content Sections Together for Flexible Layout -->
         <div class="content-sections-wrapper">
             <!-- GROUP 1: CORE UPDATES -->
-            <section class="content-card glass" id="latest-jobs">
+            <section class="content-card" id="latest-jobs">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-briefcase"></i> Latest Jobs</h3>
                     <a href="category.html?type=latestJobs" class="view-all">View All</a>
@@ -218,7 +139,7 @@
                 <ul class="link-list" id="latest-jobs-list"></ul>
             </section>
 
-            <section class="content-card glass" id="answer-key">
+            <section class="content-card" id="answer-key">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-key"></i> Answer Key</h3>
                     <a href="category.html?type=answerKey" class="view-all">View All</a>
@@ -231,7 +152,7 @@
             </div>
 
             <!-- GROUP 2: EXAM RESULTS -->
-            <section class="content-card glass" id="result">
+            <section class="content-card" id="result">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-check-circle"></i> Results</h3>
                     <a href="category.html?type=results" class="view-all">View All</a>
@@ -239,7 +160,7 @@
                 <ul class="link-list" id="results-list"></ul>
             </section>
 
-            <section class="content-card glass" id="admit-card">
+            <section class="content-card" id="admit-card">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-identification-card"></i> Admit Card</h3>
                     <a href="category.html?type=admitCard" class="view-all">View All</a>
@@ -252,7 +173,7 @@
             </div>
 
             <!-- GROUP 3: RESOURCES -->
-            <section class="content-card glass" id="syllabus">
+            <section class="content-card" id="syllabus">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-book-open"></i> Syllabus</h3>
                     <a href="category.html?type=syllabus" class="view-all">View All</a>
@@ -260,7 +181,7 @@
                 <ul class="link-list" id="syllabus-list"></ul>
             </section>
 
-            <section class="content-card glass" id="admission">
+            <section class="content-card" id="admission">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-student"></i> Admission</h3>
                     <a href="category.html?type=admission" class="view-all">View All</a>
@@ -273,7 +194,7 @@
             </div>
 
             <!-- GROUP 4: MISC -->
-            <section class="content-card glass" id="documents">
+            <section class="content-card" id="documents">
                 <div class="card-header">
                     <h3><i class="ph-bold ph-files"></i> Verification</h3>
                     <a href="category.html?type=documents" class="view-all">View All</a>
@@ -312,29 +233,67 @@
         </section>
     </main>
 
-    <footer class="glass-footer">
+    <footer class="brutal-footer">
         <div class="container footer-content">
-            <div class="footer-info">
+            <!-- Column 1: Brand Info -->
+            <div class="footer-section footer-info">
                 <div class="logo">
                      <i class="ph-bold ph-graduation-cap"></i>
                     <span>Sarkari<span class="highlight">Result</span></span>
                 </div>
-                <p>The most trusted destination for government job updates. Providing accurate information for over a decade.</p>
+                <p>India's most trusted recruitment portal since 2012. Providing real-time updates for latest Government Jobs, Admit Cards, and results with absolute accuracy.</p>
             </div>
-            <div class="footer-links">
-                <a href="links/about-us.html"><i class="ph ph-info"></i> About Us</a>
-                <a href="links/contact-us.html"><i class="ph ph-envelope"></i> Contact Us</a>
-                <a href="links/privacy-policy.html"><i class="ph ph-shield-check"></i> Privacy Policy</a>
-                <a href="links/disclaimer.html"><i class="ph ph-warning-circle"></i> Disclaimer</a>
-                <a href="links/faq.html"><i class="ph ph-question"></i> FAQ</a>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links-list">
+                    <li><a href="index.html#home"><i class="ph ph-house"></i> Home</a></li>
+                    <li><a href="links/about-us.html"><i class="ph ph-info"></i> About Us</a></li>
+                    <li><a href="links/contact-us.html"><i class="ph ph-envelope"></i> Contact Us</a></li>
+                    <li><a href="links/faq.html"><i class="ph ph-question"></i> FAQ Help</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Job Categories -->
+            <div class="footer-section">
+                <h4>Categories</h4>
+                <ul class="footer-links-list">
+                    <li><a href="category.html?type=latestJobs"><i class="ph ph-briefcase"></i> Latest Jobs</a></li>
+                    <li><a href="category.html?type=result"><i class="ph ph-check-square"></i> Results</a></li>
+                    <li><a href="category.html?type=admitCard"><i class="ph ph-identification-card"></i> Admit Card</a></li>
+                    <li><a href="category.html?type=answerKey"><i class="ph ph-key"></i> Answer Key</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Stay Updated -->
+            <div class="footer-section">
+                <h4>Stay Updated</h4>
+                <div class="newsletter-box">
+                    <p>Get instant job alerts on your email (Coming Soon).</p>
+                    <div class="subscribe-group">
+                        <input type="email" placeholder="Enter Email...">
+                        <button class="footer-btn">JOIN</button>
+                    </div>
+                </div>
+                <div class="footer-social-grid">
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-whatsapp-logo"></i></a>
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-telegram-logo"></i></a>
+                    <a href="#" class="footer-social-item"><i class="ph-fill ph-youtube-logo"></i></a>
+                </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="footer-disclaimer">
-                <p><strong>Disclaimer:</strong> This website is not associated with any government department or recruitment board. We only provide research-based information sourced from official notifications. Users are advised to verify all details on official portals before taking any action.</p>
+            <div class="footer-disclaimer-card">
+                <p><strong>Important Disclaimer:</strong> SarkariResult.com (Sarkari Result Premium) is NOT affiliated with any Government Organization or Recruitment Board. All information shared here is gathered from official recruitment notifications and public domains. Users are strictly advised to cross-verify all information with official websites before application. We are not responsible for any inadvertent errors or omissions.</p>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Sarkari Result Premium. All rights reserved.</p>
+            <div class="footer-bottom-bar">
+                <p>&copy; 2026 Sarkari Result Premium. Crafted with Pride in India.</p>
+                <div class="footer-links-list" style="flex-direction: row; gap: 1.5rem;">
+                    <li><a href="links/privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="links/disclaimer.html">Terms of Use</a></li>
+                </div>
             </div>
         </div>
     </footer>
