@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sarkari Result Premium - Category</title>
     <meta name="description" content="Get Latest Government Jobs, Admit Cards, Results, Answer Keys, and Admission updates with a premium experience.">
+    <script>
+        (function() {
+            const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
+            document.documentElement.className = savedTheme;
+        })();
+    </script>
     <!-- Google Fonts: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +18,8 @@
     <!-- Phosphor Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="style.css">
-    <script>
-        (function() {
-            const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
-            document.documentElement.className = savedTheme;
-        })();
-    </script>
 </head>
-<body class="light-theme">
+<body>
 
 
     <header class="brutal-nav">
@@ -47,12 +47,16 @@
                 </div>
             </nav>
             <div class="nav-actions">
+                <!-- Mobile Search Trigger -->
+                <button class="icon-btn mobile-search-trigger" onclick="document.querySelector('.search-overlay').classList.add('active'); document.getElementById('overlay-search-input').focus();" title="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
                 <div class="search-box">
                     <i class="ph ph-magnifying-glass"></i>
                     <input type="text" placeholder="Search...">
                 </div>
-                <button id="theme-toggle" class="icon-btn">
-                    <i class="ph ph-moon"></i>
+                <button id="theme-toggle" class="icon-btn" title="Toggle Dark/Light Mode">
+                    <i class="ph-bold ph-moon"></i>
                 </button>
                 <button id="mobile-menu-btn" class="icon-btn mobile-only">
                     <i class="ph ph-list"></i>
@@ -60,6 +64,16 @@
             </div>
         </div>
     </header>
+
+<!-- Live Job Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker-label">
+            <div class="pulse-dot"></div> SARKARI LIVE
+        </div>
+        <div class="ticker" id="live-ticker">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </div>
 
     <main class="container page-content" style="margin-top: 40px; padding: 2rem 1rem;">
         <div class="detail-grid" style="grid-template-columns: 1fr;">
@@ -93,8 +107,8 @@
                 <div class="footer-social-row">
                     <a href="https://t.me/SarkariExam_info" class="social-icon" title="Telegram"><i class="ph-fill ph-telegram-logo"></i></a>
                     <a href="https://whatsapp.com/channel/0029VaAbQf01NCrYADMLt00L" class="social-icon" title="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
-                    <a href="#" class="social-icon" title="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
-                    <a href="#" class="social-icon" title="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+                    <a href="https://instagram.com" class="social-icon" title="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
                 </div>
             </div>
 
@@ -103,7 +117,7 @@
                 <h4>Job Categories</h4>
                 <ul class="footer-links-list">
                     <li><a href="category.html?type=latestJobs">Latest Jobs</a></li>
-                    <li><a href="category.html?type=result">Results 2026</a></li>
+                    <li><a href="category.html?type=results">Results 2026</a></li>
                     <li><a href="category.html?type=admitCard">Admit Cards</a></li>
                     <li><a href="category.html?type=answerKey">Official Keys</a></li>
                 </ul>
@@ -153,11 +167,35 @@
 
     <!-- Social Float -->
     <div class="social-float">
-        <a href="https://whatsapp.com/channel/" target="_blank" class="social-btn whatsapp"><i class="ph-fill ph-whatsapp-logo"></i></a>
-        <a href="https://t.me/" target="_blank" class="social-btn telegram"><i class="ph-fill ph-telegram-logo"></i></a>
+        <a href="https://whatsapp.com/channel/0029VaAbQf01NCrYADMLt00L" target="_blank" class="social-btn whatsapp"><i class="ph-fill ph-whatsapp-logo"></i></a>
+        <a href="https://t.me/SarkariExam_info" target="_blank" class="social-btn telegram"><i class="ph-fill ph-telegram-logo"></i></a>
     </div>
 
     <!-- Need to load data first, if data is inside script.js it's fine -->
+    <!-- Premium Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="overlay-content">
+            <div class="search-header">
+                <div class="search-input-wrapper">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" id="overlay-search-input" placeholder="Search for jobs, admit cards, results..." autocomplete="off">
+                </div>
+                <button id="close-search" class="close-btn">
+                    <i class="ph ph-x"></i>
+                    <span>CLOSE</span>
+                </button>
+            </div>
+            
+            <div id="search-results-container" class="search-results-container">
+                <!-- Search results will be populated here -->
+                <div class="search-placeholder">
+                    <i class="ph ph-sparkle"></i>
+                    <p>Start typing to discover latest updates...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>

@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPESB Van Rakshak   Jail Prahari Recruitment 2026 - Sarkari Result Premium</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="../style.css">
-        <script>
+    <script>
         (function() {
             const savedTheme = localStorage.getItem('sarkari-theme') || 'light-theme';
             document.documentElement.className = savedTheme;
         })();
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MPESB Van Rakshak   Jail Prahari Recruitment 2026 - Sarkari Result Premium</title>
+    <meta name="description" content="Get the latest updates, result, admit card, and exam details for MPESB Van Rakshak   Jail Prahari Recruitment 2026. Sarkari Result Premium provides live notifications and free alerts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body class="light-theme">
+<body>
     
         <div class="blob blob-2"></div>
     </div>
@@ -46,19 +47,33 @@
                 </div>
             </nav>
             <div class="nav-actions">
+                <!-- Mobile Search Trigger -->
+                <button class="icon-btn mobile-search-trigger" onclick="document.querySelector('.search-overlay').classList.add('active'); document.getElementById('overlay-search-input').focus();" title="Search">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
                 <div class="search-box">
                     <i class="ph ph-magnifying-glass"></i>
                     <input type="text" placeholder="Search...">
                 </div>
-                <button id="theme-toggle" class="icon-btn">
+                <button id="theme-toggle" class="icon-btn" title="Toggle Dark/Light Mode">
                     <i class="ph-bold ph-moon"></i>
                 </button>
                 <button id="mobile-menu-btn" class="icon-btn mobile-only">
-                    <i class="ph-bold ph-list"></i>
+                    <i class="ph ph-list"></i>
                 </button>
             </div>
         </div>
     </header>
+
+<!-- Live Job Ticker -->
+    <div class="ticker-wrap">
+        <div class="ticker-label">
+            <div class="pulse-dot"></div> SARKARI LIVE
+        </div>
+        <div class="ticker" id="live-ticker">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </div>
 
     <main class="container detail-container">
         <nav class="breadcrumb">
@@ -170,24 +185,7 @@
                 </section>
             </div>
 
-            <aside class="detail-sidebar">
-                <section class="whatsapp-card brutal-card">
-                    <i class="ph-bold ph-whatsapp-logo"></i>
-                    <h4>Job Alerts 2026</h4>
-                    <p>Get instant updates for <strong>MPESB Van Rakshak   Jail Prahari Recruitment 2026</strong> and other jobs.</p>
-                    <a href="#" class="btn btn-whatsapp">Join Channel</a>
-                </section>
-                
-                <section class="info-card brutal-card" style="margin-top: 2rem;">
-                    <h4>General Instructions</h4>
-                    <ul class="sidebar-list">
-                        <li>Check Eligibility First</li>
-                        <li>Pay Exam Fee on Time</li>
-                        <li>Save Printout Copy</li>
-                        <li>Check Result Regularly</li>
-                    </ul>
-                </section>
-            </aside>
+            
         </div>
     </main>
 
@@ -203,8 +201,8 @@
                 <div class="footer-social-row">
                     <a href="https://t.me/SarkariExam_info" class="social-icon" title="Telegram"><i class="ph-fill ph-telegram-logo"></i></a>
                     <a href="https://whatsapp.com/channel/0029VaAbQf01NCrYADMLt00L" class="social-icon" title="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a>
-                    <a href="#" class="social-icon" title="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
-                    <a href="#" class="social-icon" title="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+                    <a href="https://youtube.com" class="social-icon" title="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+                    <a href="https://instagram.com" class="social-icon" title="Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
                 </div>
             </div>
 
@@ -213,7 +211,7 @@
                 <h4>Job Categories</h4>
                 <ul class="footer-links-list">
                     <li><a href="../category.html?type=latestJobs">Latest Jobs</a></li>
-                    <li><a href="../category.html?type=result">Results 2026</a></li>
+                    <li><a href="../category.html?type=results">Results 2026</a></li>
                     <li><a href="../category.html?type=admitCard">Admit Cards</a></li>
                     <li><a href="../category.html?type=answerKey">Official Keys</a></li>
                 </ul>
@@ -262,5 +260,28 @@
     </footer>
 
     <script src="../script.js"></script>
+    <!-- Premium Search Overlay -->
+    <div id="search-overlay" class="search-overlay">
+        <div class="overlay-content">
+            <div class="search-header">
+                <div class="search-input-wrapper">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input type="text" id="overlay-search-input" placeholder="Search for jobs, admit cards, results..." autocomplete="off">
+                </div>
+                <button id="close-search" class="close-btn">
+                    <i class="ph ph-x"></i>
+                    <span>CLOSE</span>
+                </button>
+            </div>
+            
+            <div id="search-results-container" class="search-results-container">
+                <!-- Search results will be populated here -->
+                <div class="search-placeholder">
+                    <i class="ph ph-sparkle"></i>
+                    <p>Start typing to discover latest updates...</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

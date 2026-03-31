@@ -1,6 +1,151 @@
 const data = {
     "results": [
         {
+        "title": "Bihar Police BPSSC Sub Inspector SI 2025 Pre Result",
+        "isNew": true,
+        "originalUrl": "links/bihar-police-bpssc-sub-inspector-si-2025-pre-result.html"
+        },
+{
+        "title": "NVS Class 6th Entrance Exam Summer Bound Result 2026",
+        "isNew": true,
+        "originalUrl": "links/nvs-class-6th-entrance-exam-summer-bound-result-2026.html"
+        },
+{
+        "title": "UPSC Civil Services IAS 2024 Reserve List",
+        "isNew": true,
+        "originalUrl": "links/upsc-civil-services-ias-2024-reserve-list.html"
+        },
+{
+        "title": "GATE 2026 Result with Score Card",
+        "isNew": true,
+        "originalUrl": "links/gate-2026-result-with-score-card.html"
+        },
+{
+        "title": "UPPSC LT Grade Assistant Teacher 2025 Result",
+        "isNew": true,
+        "originalUrl": "links/uppsc-lt-grade-assistant-teacher-2025-result.html"
+        },
+{
+        "title": "IIT JAM 2026 Result / Score Card",
+        "isNew": true,
+        "originalUrl": "links/iit-jam-2026-result-score-card.html"
+        },
+{
+        "title": "SSC 10+2 CHSL 2025 Tier I Marks / Score Card",
+        "isNew": true,
+        "originalUrl": "links/ssc-10-2-chsl-2025-tier-i-marks-score-card.html"
+        },
+{
+        "title": "SCI Court Master 2025 Result",
+        "isNew": true,
+        "originalUrl": "links/sci-court-master-2025-result.html"
+        },
+{
+        "title": "NTA NIFTEE 2026 Result",
+        "isNew": true,
+        "originalUrl": "links/nta-niftee-2026-result.html"
+        },
+{
+        "title": "Rajasthan RRVUNL Technician, Operator, Plant Attendant Mains Result 2026",
+        "isNew": true,
+        "originalUrl": "links/rajasthan-rrvunl-technician-operator-plant-attendant-mains-result-2026.html"
+        },
+{
+        "title": "Bihar Board BSEB Class 12th Inter Result 2026",
+        "isNew": true,
+        "originalUrl": "links/bihar-board-bseb-class-12th-inter-result-2026.html"
+        },
+{
+        "title": "SSC Junior Engineer JE 2025 Paper I Marks, Final Answer Key",
+        "isNew": true,
+        "originalUrl": "links/ssc-junior-engineer-je-2025-paper-i-marks-final-answer-key.html"
+        },
+{
+        "title": "Delhi DSSSB PGT History 2023 Result",
+        "isNew": true,
+        "originalUrl": "links/delhi-dsssb-pgt-history-2023-result.html"
+        },
+{
+        "title": "Rajasthan Class 5th, 8th Result 2026",
+        "isNew": true,
+        "originalUrl": "links/rajasthan-class-5th-8th-result-2026.html"
+        },
+{
+        "title": "Rajasthan Board RBSE Class 10th Result 2026",
+        "isNew": true,
+        "originalUrl": "links/rajasthan-board-rbse-class-10th-result-2026.html"
+        },
+{
+        "title": "MP Class 5th, Class 8th Result 2026",
+        "isNew": true,
+        "originalUrl": "links/mp-class-5th-class-8th-result-2026.html"
+        },
+{
+        "title": "CGPSC SSE Pre 2025 Result",
+        "isNew": true,
+        "originalUrl": "links/cgpsc-sse-pre-2025-result.html"
+        },
+{
+        "title": "UP Police SI / ASI 2023 Final Result",
+        "isNew": true,
+        "originalUrl": "links/up-police-si-asi-2023-final-result.html"
+        },
+{
+        "title": "Punjab National Bank PNB Apprentice Result 2026",
+        "isNew": true,
+        "originalUrl": "links/punjab-national-bank-pnb-apprentice-result-2026.html"
+        },
+{
+        "title": "SSC Delhi Police Constable 2023 Reserve Panel List",
+        "isNew": true,
+        "originalUrl": "links/ssc-delhi-police-constable-2023-reserve-panel-list.html"
+        },
+{
+        "title": "Bihar Board 10th Result 2026",
+        "isNew": true,
+        "originalUrl": "links/bihar-board-10th-result-2026.html"
+        },
+{
+        "title": "Bihar Board BSEB Class 10th Result 2026",
+        "isNew": true,
+        "originalUrl": "links/bihar-board-bseb-class-10th-result-2026.html"
+        },
+{
+        "title": "UPPSC 2024 Final Result",
+        "isNew": true,
+        "originalUrl": "links/uppsc-2024-final-result.html"
+        },
+{
+        "title": "Patna High Court Mazdoor 2025 Score Card",
+        "isNew": true,
+        "originalUrl": "links/patna-high-court-mazdoor-2025-score-card.html"
+        },
+{
+        "title": "SSC CPO SI 2025 Paper I Result",
+        "isNew": true,
+        "originalUrl": "links/ssc-cpo-si-2025-paper-i-result.html"
+        },
+{
+        "title": "UPSC CDS II 2025 Final Result",
+        "isNew": true,
+        "originalUrl": "links/upsc-cds-ii-2025-final-result.html"
+        },
+{
+        "title": "NABARD Development Assistant Pre Result 2026",
+        "isNew": true,
+        "originalUrl": "links/nabard-development-assistant-pre-result-2026.html"
+        },
+{
+        "title": "CTET February 2026 Result",
+        "isNew": true,
+        "originalUrl": "links/ctet-february-2026-result.html"
+        },
+{
+        "title": "Rajasthan Board RBSE Class 12th Result 2026",
+        "isNew": true,
+        "originalUrl": "links/rajasthan-board-rbse-class-12th-result-2026.html"
+        },
+{
             "title": "RRB Paramedical Staff Answer Key 2026 \u2013 Out",
             "isNew": true,
             "originalUrl": "https://sarkariresult.com.cm/rrb-paramedical-staff-2026/"
@@ -128,6 +273,136 @@ const data = {
     ],
     "admitCard": [
         {
+        "title": "Delhi DSSSB February to May 2026 Exam Admit Card",
+        "isNew": true,
+        "originalUrl": "links/delhi-dsssb-february-to-may-2026-exam-admit-card.html"
+        },
+{
+        "title": "NTA CUET PG 2026 Admit Card",
+        "isNew": true,
+        "originalUrl": "links/nta-cuet-pg-2026-admit-card.html"
+        },
+{
+        "title": "NVS Class 6th Winter Bound Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/nvs-class-6th-winter-bound-admit-card-2026.html"
+        },
+{
+        "title": "DelhI High Court JJA / Restorer Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/delhi-high-court-jja-restorer-admit-card-2026.html"
+        },
+{
+        "title": "MPESB MP Police ASI HC Computer Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/mpesb-mp-police-asi-hc-computer-admit-card-2026.html"
+        },
+{
+        "title": "EMRS Teaching, Non Teaching Post Tier II Exam Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/emrs-teaching-non-teaching-post-tier-ii-exam-admit-card-2026.html"
+        },
+{
+        "title": "NCERT Group A, B, C Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/ncert-group-a-b-c-admit-card-2026.html"
+        },
+{
+        "title": "RPSC Assistant Engineer AE 2024 Main Admit Card",
+        "isNew": true,
+        "originalUrl": "links/rpsc-assistant-engineer-ae-2024-main-admit-card.html"
+        },
+{
+        "title": "DRDO CEPTAM 11 Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/drdo-ceptam-11-admit-card-2026.html"
+        },
+{
+        "title": "UPPSC Mains 2025 Admit Card",
+        "isNew": true,
+        "originalUrl": "links/uppsc-mains-2025-admit-card.html"
+        },
+{
+        "title": "SSC CHSL 2025 Tier II Exam City Details",
+        "isNew": true,
+        "originalUrl": "links/ssc-chsl-2025-tier-ii-exam-city-details.html"
+        },
+{
+        "title": "UPSC Forest Services IFS 2025 Interview Schedule",
+        "isNew": true,
+        "originalUrl": "links/upsc-forest-services-ifs-2025-interview-schedule.html"
+        },
+{
+        "title": "UP Police Assistant Operator 2025 Exam Date",
+        "isNew": true,
+        "originalUrl": "links/up-police-assistant-operator-2025-exam-date.html"
+        },
+{
+        "title": "UP Police SI / ASI Confidential 2025 Exam Date",
+        "isNew": true,
+        "originalUrl": "links/up-police-si-asi-confidential-2025-exam-date.html"
+        },
+{
+        "title": "UP Police Computer Operator 2025 Exam Date",
+        "isNew": true,
+        "originalUrl": "links/up-police-computer-operator-2025-exam-date.html"
+        },
+{
+        "title": "CBSE KVS, NVS Teaching and Non Teaching Tier II Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/cbse-kvs-nvs-teaching-and-non-teaching-tier-ii-admit-card-2026.html"
+        },
+{
+        "title": "SSC Delhi Police Head Constable AWO / TPO 2022 DME Exam Schedule",
+        "isNew": true,
+        "originalUrl": "links/ssc-delhi-police-head-constable-awo-tpo-2022-dme-exam-schedule.html"
+        },
+{
+        "title": "Indian Airforce Agniveer Intake 01/2027 Exam City Details",
+        "isNew": true,
+        "originalUrl": "links/indian-airforce-agniveer-intake-01-2027-exam-city-details.html"
+        },
+{
+        "title": "Indian Airforce Airmen Medical Assistant Intake 01/2027 Exam City Details",
+        "isNew": true,
+        "originalUrl": "links/indian-airforce-airmen-medical-assistant-intake-01-2027-exam-city-details.html"
+        },
+{
+        "title": "MPESB MP Police Sub Inspector SI, Subedar 2nd Phase Exam Date 2026",
+        "isNew": true,
+        "originalUrl": "links/mpesb-mp-police-sub-inspector-si-subedar-2nd-phase-exam-date-2026.html"
+        },
+{
+        "title": "RPSC Sub Inspector SI Exam City Details 2026",
+        "isNew": true,
+        "originalUrl": "links/rpsc-sub-inspector-si-exam-city-details-2026.html"
+        },
+{
+        "title": "UPPSC LT Grade Assistant Teacher (Computer) Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/uppsc-lt-grade-assistant-teacher-computer-admit-card-2026.html"
+        },
+{
+        "title": "SSC Junior Engineer JE 2025 Paper II Exam City Details",
+        "isNew": true,
+        "originalUrl": "links/ssc-junior-engineer-je-2025-paper-ii-exam-city-details.html"
+        },
+{
+        "title": "NTA JEEMAIN Session II Admit Card 2026",
+        "isNew": true,
+        "originalUrl": "links/nta-jeemain-session-ii-admit-card-2026.html"
+        },
+{
+        "title": "JPSC Pre 2026 New Exam Date",
+        "isNew": true,
+        "originalUrl": "links/jpsc-pre-2026-new-exam-date.html"
+        },
+{
+        "title": "UPPSC Technical Education Principal 2025 Admit Card",
+        "isNew": true,
+        "originalUrl": "links/uppsc-technical-education-principal-2025-admit-card.html"
+        },
+{
             "title": "RRB NTPC Graduate Level CBT-I Admit Card 2026",
             "isNew": false,
             "originalUrl": "https://sarkariresult.com.cm/rrb-ntpc-graduate-level-2026/"
@@ -255,6 +530,136 @@ const data = {
     ],
     "latestJobs": [
         {
+        "title": "CSBC Bihar Police Constable Operator Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/csbc-bihar-police-constable-operator-online-form-2026.html"
+        },
+{
+        "title": "UPSC Combined Medical Services CMS Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/upsc-combined-medical-services-cms-online-form-2026.html"
+        },
+{
+        "title": "RRC CR Apprentices Online Form",
+        "isNew": true,
+        "originalUrl": "links/rrc-cr-apprentices-online-form.html"
+        },
+{
+        "title": "Allahabad High Court Private Secretary Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/allahabad-high-court-private-secretary-online-form-2026.html"
+        },
+{
+        "title": "Railway RRC SCR Apprentices Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/railway-rrc-scr-apprentices-online-form-2026.html"
+        },
+{
+        "title": "Indian Navy SSR / MR INET 2026 Online Form",
+        "isNew": true,
+        "originalUrl": "links/indian-navy-ssr-mr-inet-2026-online-form.html"
+        },
+{
+        "title": "Indian Navy SSR Medical Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/indian-navy-ssr-medical-online-form-2026.html"
+        },
+{
+        "title": "UP Anganwadi Worker Online Form",
+        "isNew": true,
+        "originalUrl": "links/up-anganwadi-worker-online-form.html"
+        },
+{
+        "title": "Railway RRB Assistant Loco Pilot ALP CEN 01/2026 Online Form",
+        "isNew": true,
+        "originalUrl": "links/railway-rrb-assistant-loco-pilot-alp-cen-01-2026-online-form.html"
+        },
+{
+        "title": "UPSSSC Assistant Boring Technician Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/upsssc-assistant-boring-technician-online-form-2026.html"
+        },
+{
+        "title": "MPESB Group 5 Various Post Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/mpesb-group-5-various-post-online-form-2026.html"
+        },
+{
+        "title": "UPSSSC Technical Assistant Group C 2024 Online Document Upload",
+        "isNew": true,
+        "originalUrl": "links/upsssc-technical-assistant-group-c-2024-online-document-upload.html"
+        },
+{
+        "title": "UPPSC GIC Lecturer Edit / Modify Form 2026",
+        "isNew": true,
+        "originalUrl": "links/uppsc-gic-lecturer-edit-modify-form-2026.html"
+        },
+{
+        "title": "BPSC 33 Civil Judge PCS J Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/bpsc-33-civil-judge-pcs-j-online-form-2026.html"
+        },
+{
+        "title": "UPSSSC Assistant Statistical Officer ASO Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/upsssc-assistant-statistical-officer-aso-online-form-2026.html"
+        },
+{
+        "title": "SSB Constable, HC, ASI, SI Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/ssb-constable-hc-asi-si-online-form-2026.html"
+        },
+{
+        "title": "UPSRTC Female Bus Conductor Recruitment 2026",
+        "isNew": true,
+        "originalUrl": "links/upsrtc-female-bus-conductor-recruitment-2026.html"
+        },
+{
+        "title": "UPCISB UP Cooperative Bank Various Post Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/upcisb-up-cooperative-bank-various-post-online-form-2026.html"
+        },
+{
+        "title": "UPSSSC Technical Assistant Group C Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/upsssc-technical-assistant-group-c-online-form-2026.html"
+        },
+{
+        "title": "MPESB MP Police Sub Inspector SI, Subedar 2nd Phase Fee Payment",
+        "isNew": true,
+        "originalUrl": "links/mpesb-mp-police-sub-inspector-si-subedar-2nd-phase-fee-payment.html"
+        },
+{
+        "title": "UPTET 2026 Online Form",
+        "isNew": true,
+        "originalUrl": "links/uptet-2026-online-form.html"
+        },
+{
+        "title": "Jharkhand Teacher Eligibility Test JHTET Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/jharkhand-teacher-eligibility-test-jhtet-online-form-2026.html"
+        },
+{
+        "title": "ITBP Constable Barber, Washerman Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/itbp-constable-barber-washerman-online-form-2026.html"
+        },
+{
+        "title": "Indian Army Agniveer Rally Recruitment Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/indian-army-agniveer-rally-recruitment-online-form-2026.html"
+        },
+{
+        "title": "Indian Navy MR Musician 02/2026 Batch Online Form",
+        "isNew": true,
+        "originalUrl": "links/indian-navy-mr-musician-02-2026-batch-online-form.html"
+        },
+{
+        "title": "UPSSSC Lower PCS Graduate Level Online Form 2026",
+        "isNew": true,
+        "originalUrl": "links/upsssc-lower-pcs-graduate-level-online-form-2026.html"
+        },
+{
             "title": "Sainik School Jhansi Recruitment 2026",
             "isNew": true,
             "lastDate": "10/04/2026",
@@ -705,9 +1110,96 @@ function initNavigation() {
             }
         });
     });
+
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Optionally update URL without jumping
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+}
+
+function initTicker() {
+    const tickerContainer = document.getElementById('live-ticker');
+    if (!tickerContainer) return;
+
+    // Gather all 'isNew' items from core categories
+    const categories = ['latestJobs', 'results', 'admitCard', 'answerKey'];
+    let tickerItems = [];
+
+    // Icon Mapping for categories - Duotone for v3.0
+    const iconMap = {
+        'latestJobs': 'ph-duotone ph-briefcase',
+        'results': 'ph-duotone ph-medal',
+        'admitCard': 'ph-duotone ph-identification-card',
+        'answerKey': 'ph-duotone ph-key'
+    };
+
+    categories.forEach(cat => {
+        if (data[cat]) {
+            const fresh = data[cat].filter(item => item.isNew).slice(0, 10).map(item => ({
+                ...item,
+                category: cat,
+                icon: iconMap[cat] || 'ph-duotone ph-push-pin'
+            }));
+            tickerItems = [...tickerItems, ...fresh];
+        }
+    });
+
+    if (tickerItems.length === 0) return;
+
+    // Shuffle for variety
+    tickerItems.sort(() => Math.random() - 0.5);
+
+    // List of colors from style.css
+    const colors = ['ticker-red', 'ticker-blue', 'ticker-orange', 'ticker-darkred', 'ticker-green', 'ticker-pink', 'ticker-cyan', 'ticker-purple'];
+
+    function highlightKeywords(text) {
+        const keywords = ['OUT', 'NEW', 'RESULT', 'LIVE', 'OFFICIALLY'];
+        let highlighted = text;
+        keywords.forEach(word => {
+            const regex = new RegExp(`\\b${word}\\b`, 'gi');
+            highlighted = highlighted.replace(regex, match => `<span class="ticker-badge">${match.toUpperCase()}</span>`);
+        });
+        return highlighted;
+    }
+
+    function createTickerList(items) {
+        items.forEach((item, index) => {
+            const anchor = document.createElement('a');
+            anchor.href = item.originalUrl;
+            anchor.className = `ticker__item ${colors[index % colors.length]}`;
+            
+            const displayTitle = highlightKeywords(item.title);
+            anchor.innerHTML = `<i class="${item.icon}"></i> ${displayTitle}`;
+            tickerContainer.appendChild(anchor);
+        });
+    }
+
+    // Initial population
+    createTickerList(tickerItems);
+    
+    // Duplicate for seamless loop
+    if (tickerItems.length < 20) {
+        createTickerList(tickerItems);
+    }
 }
 
 function populateUI() {
+    // Initialize Ticker
+    initTicker();
+
     // Populate Trending
     // Hero grid is handled statically in index.html to allow for premium massive designs.
     // Dynamic population is disabled here to avoid "ched chad" with the manual layout.
@@ -734,56 +1226,125 @@ function slugify(text) {
 }
 
 function initSearch() {
-    const mainSearchInput = document.getElementById('main-search-input');
-    const navSearchInput = document.querySelector('.search-box input');
-    const noResultsMessage = document.getElementById('no-results-message');
-    const queryTextSpan = document.getElementById('query-text');
-    
-    function performSearch(query) {
-        query = query.toLowerCase().trim();
-        const allTrackedItems = document.querySelectorAll('.link-item, .hero-card');
-        const allSections = document.querySelectorAll('.content-card, .hero-section');
-        let hasResults = false;
-        
-        allTrackedItems.forEach(item => {
-            const text = item.innerText.toLowerCase();
-            if (text.includes(query)) {
-                item.classList.remove('hidden');
-                item.style.opacity = '1';
-                hasResults = true;
-            } else {
-                item.classList.add('hidden');
-                item.style.opacity = '0';
-            }
-        });
+    const searchTrigger = document.querySelector('.search-box');
+    const overlay = document.getElementById('search-overlay');
+    const overlayInput = document.getElementById('overlay-search-input');
+    const closeBtn = document.getElementById('close-search');
+    const resultsContainer = document.getElementById('search-results-container');
 
-        // Hide/Show sections based on results
-        allSections.forEach(section => {
-            const visibleItems = section.querySelectorAll('.link-item:not(.hidden), .hero-card:not(.hidden)');
-            if (visibleItems.length === 0 && query !== "") {
-                section.style.display = 'none';
-            } else {
-                section.style.display = '';
-            }
-        });
+    if (!searchTrigger || !overlay || !overlayInput || !closeBtn || !resultsContainer) return;
 
-        // Handle "No results" message
-        if (noResultsMessage) {
-            if (!hasResults && query !== "") {
-                noResultsMessage.style.display = 'block';
-                if (queryTextSpan) queryTextSpan.textContent = query;
-            } else {
-                noResultsMessage.style.display = 'none';
-            }
+    // Open Overlay
+    searchTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        overlay.style.display = 'block';
+        setTimeout(() => overlay.classList.add('active'), 10);
+        overlayInput.focus();
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    });
+
+    // Close Overlay
+    const closeOverlay = () => {
+        overlay.classList.remove('active');
+        setTimeout(() => overlay.style.display = 'none', 300);
+        document.body.style.overflow = '';
+        overlayInput.value = '';
+        resetPlaceholder();
+    };
+
+    closeBtn.addEventListener('click', closeOverlay);
+
+    // Close on Escape Key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && overlay.classList.contains('active')) {
+            closeOverlay();
         }
+    });
+
+    // Perform Global Search
+    overlayInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        
+        if (query === "") {
+            resetPlaceholder();
+            return;
+        }
+
+        renderSearchResults(query);
+    });
+
+    function resetPlaceholder() {
+        resultsContainer.innerHTML = `
+            <div class="search-placeholder">
+                <h3 class="suggestions-title"><i class="ph-bold ph-fire"></i> LATEST UPDATES</h3>
+                <div id="suggestions-list" class="suggestions-wrapper"></div>
+            </div>
+        `;
+        
+        const suggestionsList = document.getElementById('suggestions-list');
+        const latestItems = [];
+        
+        // Collect items marked as isNew
+        for (const category in data) {
+            data[category].forEach(item => {
+                if (item.isNew && latestItems.length < 9) {
+                    latestItems.push({ ...item, category });
+                }
+            });
+        }
+
+        latestItems.forEach(item => {
+            const pill = document.createElement('a');
+            pill.className = 'suggestion-pill';
+            
+            const id = slugify(item.title);
+            const isInLinks = window.location.pathname.includes('/links/');
+            const url = isInLinks ? `${id}.html` : `links/${id}.html`;
+            pill.href = url;
+            
+            pill.innerHTML = `<i class="ph ph-sparkle"></i> ${item.title}`;
+            suggestionsList.appendChild(pill);
+        });
     }
 
-    if (mainSearchInput) {
-        mainSearchInput.addEventListener('input', (e) => performSearch(e.target.value));
-    }
-    
-    if (navSearchInput) {
-        navSearchInput.addEventListener('input', (e) => performSearch(e.target.value));
+    function renderSearchResults(query) {
+        resultsContainer.innerHTML = '';
+        let matchCount = 0;
+
+        // Iterate through all categories in the data object
+        for (const category in data) {
+            const items = data[category];
+            items.forEach(item => {
+                if (item.title.toLowerCase().includes(query)) {
+                    matchCount++;
+                    const resultItem = document.createElement('a');
+                    resultItem.className = 'overlay-result-item';
+                    
+                    const id = slugify(item.title);
+                    const isInLinks = window.location.pathname.includes('/links/');
+                    const url = isInLinks ? `${id}.html` : `links/${id}.html`;
+                    resultItem.href = url;
+
+                    resultItem.innerHTML = `
+                        <div class="result-info">
+                            <span class="result-tag">${category.replace(/([A-Z])/g, ' $1')}</span>
+                            <h4>${item.title}</h4>
+                        </div>
+                        <i class="ph ph-arrow-right"></i>
+                    `;
+                    resultsContainer.appendChild(resultItem);
+                }
+            });
+        }
+
+        if (matchCount === 0) {
+            resultsContainer.innerHTML = `
+                <div class="search-placeholder">
+                    <i class="ph ph-smiley-blank"></i>
+                    <p>No results found for "${query}"</p>
+                </div>
+            `;
+        }
     }
 }
 
